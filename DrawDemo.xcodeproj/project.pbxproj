@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79085C3A20B8162000A6E192 /* CKYRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3920B8162000A6E192 /* CKYRotationView.m */; };
+		79085C3D20B8163400A6E192 /* CKYTextboxRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3C20B8163400A6E192 /* CKYTextboxRotationView.m */; };
+		79085C4020B8164E00A6E192 /* CKYRotationViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3F20B8164E00A6E192 /* CKYRotationViewItem.m */; };
+		794A3AA420B7FF6A00B6A8E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AA320B7FF6A00B6A8E7 /* AppDelegate.m */; };
+		794A3AA720B7FF6A00B6A8E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AA620B7FF6A00B6A8E7 /* ViewController.m */; };
+		794A3AAA20B7FF6A00B6A8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794A3AA820B7FF6A00B6A8E7 /* Main.storyboard */; };
+		794A3AAC20B7FF6A00B6A8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794A3AAB20B7FF6A00B6A8E7 /* Assets.xcassets */; };
+		794A3AAF20B7FF6A00B6A8E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794A3AAD20B7FF6A00B6A8E7 /* LaunchScreen.storyboard */; };
+		794A3AB220B7FF6A00B6A8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AB120B7FF6A00B6A8E7 /* main.m */; };
+		794A3ABA20B7FF8300B6A8E7 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AB920B7FF8300B6A8E7 /* DrawView.m */; };
+		7974612B20C2A0740087C924 /* CKYGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612A20C2A0740087C924 /* CKYGif.m */; };
+		7974612D20C2A0860087C924 /* CKYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612C20C2A0860087C924 /* CKYBezierPath.m */; };
+		7974612F20C2A0960087C924 /* CKYCoreFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612E20C2A0960087C924 /* CKYCoreFit.m */; };
+		7974613120C2A0D00087C924 /* CKYCustomizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */; };
+		84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */; };
+		84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450C20B9C66200D83B1B /* CKYStyleModel.m */; };
+		84AC451020B9CF1B00D83B1B /* CKYCustomizingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450F20B9CF1B00D83B1B /* CKYCustomizingModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79085C3820B8162000A6E192 /* CKYRotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYRotationView.h; sourceTree = "<group>"; };
+		79085C3920B8162000A6E192 /* CKYRotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYRotationView.m; sourceTree = "<group>"; };
+		79085C3B20B8163400A6E192 /* CKYTextboxRotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYTextboxRotationView.h; sourceTree = "<group>"; };
+		79085C3C20B8163400A6E192 /* CKYTextboxRotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYTextboxRotationView.m; sourceTree = "<group>"; };
+		79085C3E20B8164E00A6E192 /* CKYRotationViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYRotationViewItem.h; sourceTree = "<group>"; };
+		79085C3F20B8164E00A6E192 /* CKYRotationViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYRotationViewItem.m; sourceTree = "<group>"; };
+		794A3A9F20B7FF6A00B6A8E7 /* DrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794A3AA220B7FF6A00B6A8E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		794A3AA320B7FF6A00B6A8E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		794A3AA520B7FF6A00B6A8E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		794A3AA620B7FF6A00B6A8E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		794A3AA920B7FF6A00B6A8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794A3AAB20B7FF6A00B6A8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		794A3AAE20B7FF6A00B6A8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		794A3AB020B7FF6A00B6A8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794A3AB120B7FF6A00B6A8E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		794A3AB820B7FF8300B6A8E7 /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		794A3AB920B7FF8300B6A8E7 /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		797460F320C29F680087C924 /* BQSMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSMakeViewController.h; sourceTree = "<group>"; };
+		797460F520C29F680087C924 /* CKYDrawShinePanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYDrawShinePanView.h; sourceTree = "<group>"; };
+		797460F620C29F680087C924 /* CKYDrawStylePanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYDrawStylePanView.h; sourceTree = "<group>"; };
+		797460F720C29F680087C924 /* CKYTextToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYTextToolView.h; sourceTree = "<group>"; };
+		797460F820C29F680087C924 /* CKYAddTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYAddTextView.h; sourceTree = "<group>"; };
+		797460F920C29F680087C924 /* CKYToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYToolView.h; sourceTree = "<group>"; };
+		797460FA20C29F680087C924 /* CKYEraserToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYEraserToolView.h; sourceTree = "<group>"; };
+		797460FB20C29F680087C924 /* CKYRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYRotationView.h; sourceTree = "<group>"; };
+		797460FC20C29F680087C924 /* CKYTopToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYTopToolView.h; sourceTree = "<group>"; };
+		797460FD20C29F680087C924 /* CKYBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYBorderView.h; sourceTree = "<group>"; };
+		797460FE20C29F680087C924 /* CKYImageRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYImageRotationView.h; sourceTree = "<group>"; };
+		797460FF20C29F680087C924 /* CKYTextboxRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYTextboxRotationView.h; sourceTree = "<group>"; };
+		7974610020C29F680087C924 /* CKYDrawBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYDrawBaseView.h; sourceTree = "<group>"; };
+		7974610120C29F680087C924 /* CKYDrawPanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYDrawPanView.h; sourceTree = "<group>"; };
+		7974610220C29F680087C924 /* CKYDrawToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYDrawToolView.h; sourceTree = "<group>"; };
+		7974610320C29F680087C924 /* CKYShinePanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYShinePanView.h; sourceTree = "<group>"; };
+		7974610420C29F680087C924 /* CKYTextRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYTextRotationView.h; sourceTree = "<group>"; };
+		7974610520C29F680087C924 /* CKYColorBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYColorBoardView.h; sourceTree = "<group>"; };
+		7974610620C29F680087C924 /* CKYStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYStyleLabel.h; sourceTree = "<group>"; };
+		7974610720C29F680087C924 /* BQSPanBoardTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSPanBoardTopView.h; sourceTree = "<group>"; };
+		7974610820C29F680087C924 /* BQSBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSBackgroundView.h; sourceTree = "<group>"; };
+		7974610A20C29F680087C924 /* CKYColorBoardViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKYColorBoardViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974610B20C29F680087C924 /* CKYTopToolViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKYTopToolViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974610C20C29F680087C924 /* CKYToolViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKYToolViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974610D20C29F680087C924 /* CKYMainToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYMainToolView.h; sourceTree = "<group>"; };
+		7974610E20C29F680087C924 /* BQSDrawToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSDrawToolViewController.h; sourceTree = "<group>"; };
+		7974610F20C29F680087C924 /* CKYScrawlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYScrawlView.h; sourceTree = "<group>"; };
+		7974611120C29F680087C924 /* CKYCustomizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYCustomizingViewController.h; sourceTree = "<group>"; };
+		7974611220C29F680087C924 /* CKYCustomizingViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKYCustomizingViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974611420C29F680087C924 /* CKYCustomizingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYCustomizingModel.h; path = star/BaseModel/CKYCustomizingModel.h; sourceTree = "<group>"; };
+		7974611520C29F680087C924 /* CKYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYBaseModel.h; sourceTree = "<group>"; };
+		7974611620C29F680087C924 /* CKYStyleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYStyleModel.h; path = star/BaseModel/CKYStyleModel.h; sourceTree = "<group>"; };
+		7974611720C29F680087C924 /* CKYRotationViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYRotationViewItem.h; path = star/BaseModel/CKYRotationViewItem.h; sourceTree = "<group>"; };
+		7974611820C29F680087C924 /* BQSPanBoardTopViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BQSPanBoardTopViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974611920C29F680087C924 /* BQSCusBackImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSCusBackImageView.h; sourceTree = "<group>"; };
+		7974611A20C29F680087C924 /* BQSPanToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSPanToolView.h; sourceTree = "<group>"; };
+		7974611B20C29F680087C924 /* BQSShowDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSShowDeleteView.h; sourceTree = "<group>"; };
+		7974611C20C29F680087C924 /* BQSMakeViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BQSMakeViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		7974611E20C29F680087C924 /* CKYGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYGif.h; sourceTree = "<group>"; };
+		7974611F20C29F680087C924 /* CKYBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYBezierPath.h; sourceTree = "<group>"; };
+		7974612020C29F680087C924 /* CKYCoreFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYCoreFit.h; sourceTree = "<group>"; };
+		7974612120C29F680087C924 /* BQSHitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSHitTestView.h; sourceTree = "<group>"; };
+		7974612A20C2A0740087C924 /* CKYGif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYGif.m; sourceTree = "<group>"; };
+		7974612C20C2A0860087C924 /* CKYBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYBezierPath.m; sourceTree = "<group>"; };
+		7974612E20C2A0960087C924 /* CKYCoreFit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCoreFit.m; sourceTree = "<group>"; };
+		7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCustomizingViewController.m; sourceTree = "<group>"; };
+		84AC450820B9C5F300D83B1B /* BQSTextStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BQSTextStyleModel.h; sourceTree = "<group>"; };
+		84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BQSTextStyleModel.m; sourceTree = "<group>"; };
+		84AC450B20B9C66200D83B1B /* CKYStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYStyleModel.h; sourceTree = "<group>"; };
+		84AC450C20B9C66200D83B1B /* CKYStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYStyleModel.m; sourceTree = "<group>"; };
+		84AC450E20B9CF1B00D83B1B /* CKYCustomizingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYCustomizingModel.h; sourceTree = "<group>"; };
+		84AC450F20B9CF1B00D83B1B /* CKYCustomizingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCustomizingModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794A3A9C20B7FF6A00B6A8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794A3A9620B7FF6A00B6A8E7 = {
+			isa = PBXGroup;
+			children = (
+				794A3AA120B7FF6A00B6A8E7 /* DrawDemo */,
+				794A3AA020B7FF6A00B6A8E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		794A3AA020B7FF6A00B6A8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794A3A9F20B7FF6A00B6A8E7 /* DrawDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794A3AA120B7FF6A00B6A8E7 /* DrawDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7974612320C29F7E0087C924 /* CKY */,
+				7974612220C29F770087C924 /* BQS */,
+				794A3AA220B7FF6A00B6A8E7 /* AppDelegate.h */,
+				794A3AA320B7FF6A00B6A8E7 /* AppDelegate.m */,
+				794A3AA520B7FF6A00B6A8E7 /* ViewController.h */,
+				794A3AA620B7FF6A00B6A8E7 /* ViewController.m */,
+				794A3AB820B7FF8300B6A8E7 /* DrawView.h */,
+				794A3AB920B7FF8300B6A8E7 /* DrawView.m */,
+				84AC450B20B9C66200D83B1B /* CKYStyleModel.h */,
+				84AC450C20B9C66200D83B1B /* CKYStyleModel.m */,
+				84AC450E20B9CF1B00D83B1B /* CKYCustomizingModel.h */,
+				84AC450F20B9CF1B00D83B1B /* CKYCustomizingModel.m */,
+				84AC450820B9C5F300D83B1B /* BQSTextStyleModel.h */,
+				84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */,
+				79085C3E20B8164E00A6E192 /* CKYRotationViewItem.h */,
+				79085C3F20B8164E00A6E192 /* CKYRotationViewItem.m */,
+				79085C3820B8162000A6E192 /* CKYRotationView.h */,
+				79085C3920B8162000A6E192 /* CKYRotationView.m */,
+				79085C3B20B8163400A6E192 /* CKYTextboxRotationView.h */,
+				79085C3C20B8163400A6E192 /* CKYTextboxRotationView.m */,
+				794A3AA820B7FF6A00B6A8E7 /* Main.storyboard */,
+				794A3AAB20B7FF6A00B6A8E7 /* Assets.xcassets */,
+				794A3AAD20B7FF6A00B6A8E7 /* LaunchScreen.storyboard */,
+				794A3AB020B7FF6A00B6A8E7 /* Info.plist */,
+				794A3AB120B7FF6A00B6A8E7 /* main.m */,
+			);
+			path = DrawDemo;
+			sourceTree = "<group>";
+		};
+		7974612220C29F770087C924 /* BQS */ = {
+			isa = PBXGroup;
+			children = (
+				7974612920C29FAE0087C924 /* VC */,
+				7974612820C29FA90087C924 /* Model */,
+				7974612720C29F9B0087C924 /* View */,
+			);
+			name = BQS;
+			sourceTree = "<group>";
+		};
+		7974612320C29F7E0087C924 /* CKY */ = {
+			isa = PBXGroup;
+			children = (
+				7974611E20C29F680087C924 /* CKYGif.h */,
+				7974612A20C2A0740087C924 /* CKYGif.m */,
+				7974611F20C29F680087C924 /* CKYBezierPath.h */,
+				7974612C20C2A0860087C924 /* CKYBezierPath.m */,
+				7974612020C29F680087C924 /* CKYCoreFit.h */,
+				7974612E20C2A0960087C924 /* CKYCoreFit.m */,
+				7974610A20C29F680087C924 /* CKYColorBoardViewDelegate-Protocol.h */,
+				7974610B20C29F680087C924 /* CKYTopToolViewDelegate-Protocol.h */,
+				7974610C20C29F680087C924 /* CKYToolViewDelegate-Protocol.h */,
+				7974612620C29F900087C924 /* VC */,
+				7974612520C29F880087C924 /* Model */,
+				7974612420C29F830087C924 /* View */,
+			);
+			name = CKY;
+			sourceTree = "<group>";
+		};
+		7974612420C29F830087C924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				797460F520C29F680087C924 /* CKYDrawShinePanView.h */,
+				797460F620C29F680087C924 /* CKYDrawStylePanView.h */,
+				797460F720C29F680087C924 /* CKYTextToolView.h */,
+				797460F820C29F680087C924 /* CKYAddTextView.h */,
+				797460F920C29F680087C924 /* CKYToolView.h */,
+				797460FA20C29F680087C924 /* CKYEraserToolView.h */,
+				797460FB20C29F680087C924 /* CKYRotationView.h */,
+				797460FC20C29F680087C924 /* CKYTopToolView.h */,
+				797460FD20C29F680087C924 /* CKYBorderView.h */,
+				797460FE20C29F680087C924 /* CKYImageRotationView.h */,
+				797460FF20C29F680087C924 /* CKYTextboxRotationView.h */,
+				7974610020C29F680087C924 /* CKYDrawBaseView.h */,
+				7974610120C29F680087C924 /* CKYDrawPanView.h */,
+				7974610220C29F680087C924 /* CKYDrawToolView.h */,
+				7974610320C29F680087C924 /* CKYShinePanView.h */,
+				7974610420C29F680087C924 /* CKYTextRotationView.h */,
+				7974610520C29F680087C924 /* CKYColorBoardView.h */,
+				7974610620C29F680087C924 /* CKYStyleLabel.h */,
+				7974610F20C29F680087C924 /* CKYScrawlView.h */,
+				7974610D20C29F680087C924 /* CKYMainToolView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7974612520C29F880087C924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7974611420C29F680087C924 /* CKYCustomizingModel.h */,
+				7974611520C29F680087C924 /* CKYBaseModel.h */,
+				7974611620C29F680087C924 /* CKYStyleModel.h */,
+				7974611720C29F680087C924 /* CKYRotationViewItem.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7974612620C29F900087C924 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7974611120C29F680087C924 /* CKYCustomizingViewController.h */,
+				7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */,
+				7974611220C29F680087C924 /* CKYCustomizingViewControllerDelegate-Protocol.h */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		7974612720C29F9B0087C924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7974611C20C29F680087C924 /* BQSMakeViewControllerDelegate-Protocol.h */,
+				7974611820C29F680087C924 /* BQSPanBoardTopViewDelegate-Protocol.h */,
+				7974610E20C29F680087C924 /* BQSDrawToolViewController.h */,
+				7974611A20C29F680087C924 /* BQSPanToolView.h */,
+				7974611B20C29F680087C924 /* BQSShowDeleteView.h */,
+				7974611920C29F680087C924 /* BQSCusBackImageView.h */,
+				7974610820C29F680087C924 /* BQSBackgroundView.h */,
+				7974610720C29F680087C924 /* BQSPanBoardTopView.h */,
+				7974612120C29F680087C924 /* BQSHitTestView.h */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7974612820C29FA90087C924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7974612920C29FAE0087C924 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				797460F320C29F680087C924 /* BQSMakeViewController.h */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		794A3A9E20B7FF6A00B6A8E7 /* DrawDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794A3AB520B7FF6A00B6A8E7 /* Build configuration list for PBXNativeTarget "DrawDemo" */;
+			buildPhases = (
+				794A3A9B20B7FF6A00B6A8E7 /* Sources */,
+				794A3A9C20B7FF6A00B6A8E7 /* Frameworks */,
+				794A3A9D20B7FF6A00B6A8E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawDemo;
+			productName = DrawDemo;
+			productReference = 794A3A9F20B7FF6A00B6A8E7 /* DrawDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794A3A9720B7FF6A00B6A8E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = perfay;
+				TargetAttributes = {
+					794A3A9E20B7FF6A00B6A8E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 794A3A9A20B7FF6A00B6A8E7 /* Build configuration list for PBXProject "DrawDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794A3A9620B7FF6A00B6A8E7;
+			productRefGroup = 794A3AA020B7FF6A00B6A8E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794A3A9E20B7FF6A00B6A8E7 /* DrawDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794A3A9D20B7FF6A00B6A8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794A3AAF20B7FF6A00B6A8E7 /* LaunchScreen.storyboard in Resources */,
+				794A3AAC20B7FF6A00B6A8E7 /* Assets.xcassets in Resources */,
+				794A3AAA20B7FF6A00B6A8E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794A3A9B20B7FF6A00B6A8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794A3AA720B7FF6A00B6A8E7 /* ViewController.m in Sources */,
+				84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */,
+				7974612B20C2A0740087C924 /* CKYGif.m in Sources */,
+				794A3AB220B7FF6A00B6A8E7 /* main.m in Sources */,
+				794A3ABA20B7FF8300B6A8E7 /* DrawView.m in Sources */,
+				84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */,
+				79085C3A20B8162000A6E192 /* CKYRotationView.m in Sources */,
+				79085C4020B8164E00A6E192 /* CKYRotationViewItem.m in Sources */,
+				794A3AA420B7FF6A00B6A8E7 /* AppDelegate.m in Sources */,
+				7974612F20C2A0960087C924 /* CKYCoreFit.m in Sources */,
+				84AC451020B9CF1B00D83B1B /* CKYCustomizingModel.m in Sources */,
+				7974613120C2A0D00087C924 /* CKYCustomizingViewController.m in Sources */,
+				79085C3D20B8163400A6E192 /* CKYTextboxRotationView.m in Sources */,
+				7974612D20C2A0860087C924 /* CKYBezierPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		794A3AA820B7FF6A00B6A8E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794A3AA920B7FF6A00B6A8E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		794A3AAD20B7FF6A00B6A8E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794A3AAE20B7FF6A00B6A8E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794A3AB320B7FF6A00B6A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		794A3AB420B7FF6A00B6A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794A3AB620B7FF6A00B6A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC3QX9VJ78;
+				INFOPLIST_FILE = DrawDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.DrawDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		794A3AB720B7FF6A00B6A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC3QX9VJ78;
+				INFOPLIST_FILE = DrawDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.DrawDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794A3A9A20B7FF6A00B6A8E7 /* Build configuration list for PBXProject "DrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794A3AB320B7FF6A00B6A8E7 /* Debug */,
+				794A3AB420B7FF6A00B6A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794A3AB520B7FF6A00B6A8E7 /* Build configuration list for PBXNativeTarget "DrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794A3AB620B7FF6A00B6A8E7 /* Debug */,
+				794A3AB720B7FF6A00B6A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794A3A9720B7FF6A00B6A8E7 /* Project object */;
+}
