@@ -30,7 +30,7 @@
 @property(nonatomic) long long contentViewType; // @synthesize contentViewType=_contentViewType;
 @property(retain, nonatomic) CKYRotationViewItem *rotationItem; // @synthesize rotationItem=_rotationItem;
 - (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
-- (void)setEleTime:(CDStruct_1b6d18a9)arg1 allTime:(CDStruct_1b6d18a9)arg2;
+//- (void)setEleTime:(CDStruct_1b6d18a9)arg1 allTime:(CDStruct_1b6d18a9)arg2;
 - (void)endSynchor;
 - (void)beganSynchro;
 - (struct CGPoint)getBottomPoint;
@@ -48,6 +48,6 @@
 - (void)changeHeight:(double)arg1;
 - (void)changeWidth:(double)arg1;
 - (void)initConfig;
-- (id)initWithFrame:(struct CGRect)arg1;
-- (id)initWithCoder:(id)arg1;
+//- (id)initWithFrame:(struct CGRect)arg1;
+//- (id)initWithCoder:(id)arg1;
 @end

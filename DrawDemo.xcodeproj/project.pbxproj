@@ -21,6 +21,7 @@
 		7974612D20C2A0860087C924 /* CKYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612C20C2A0860087C924 /* CKYBezierPath.m */; };
 		7974612F20C2A0960087C924 /* CKYCoreFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612E20C2A0960087C924 /* CKYCoreFit.m */; };
 		7974613120C2A0D00087C924 /* CKYCustomizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */; };
+		84356C9520CA062000BAE795 /* TestMethodProject.c in Sources */ = {isa = PBXBuildFile; fileRef = 84356C9420CA062000BAE795 /* TestMethodProject.c */; };
 		84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */; };
 		84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450C20B9C66200D83B1B /* CKYStyleModel.m */; };
 		84AC451020B9CF1B00D83B1B /* CKYCustomizingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450F20B9CF1B00D83B1B /* CKYCustomizingModel.m */; };
@@ -91,6 +92,7 @@
 		7974612C20C2A0860087C924 /* CKYBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYBezierPath.m; sourceTree = "<group>"; };
 		7974612E20C2A0960087C924 /* CKYCoreFit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCoreFit.m; sourceTree = "<group>"; };
 		7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCustomizingViewController.m; sourceTree = "<group>"; };
+		84356C9420CA062000BAE795 /* TestMethodProject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TestMethodProject.c; sourceTree = "<group>"; };
 		84AC450820B9C5F300D83B1B /* BQSTextStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BQSTextStyleModel.h; sourceTree = "<group>"; };
 		84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BQSTextStyleModel.m; sourceTree = "<group>"; };
 		84AC450B20B9C66200D83B1B /* CKYStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYStyleModel.h; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		7974612220C29F770087C924 /* BQS */ = {
 			isa = PBXGroup;
 			children = (
+				84356C9420CA062000BAE795 /* TestMethodProject.c */,
 				7974612920C29FAE0087C924 /* VC */,
 				7974612820C29FA90087C924 /* Model */,
 				7974612720C29F9B0087C924 /* View */,
@@ -341,6 +344,7 @@
 				794A3AA720B7FF6A00B6A8E7 /* ViewController.m in Sources */,
 				84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */,
 				7974612B20C2A0740087C924 /* CKYGif.m in Sources */,
+				84356C9520CA062000BAE795 /* TestMethodProject.c in Sources */,
 				794A3AB220B7FF6A00B6A8E7 /* main.m in Sources */,
 				794A3ABA20B7FF8300B6A8E7 /* DrawView.m in Sources */,
 				84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */,

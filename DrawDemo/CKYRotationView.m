@@ -12,6 +12,7 @@
 
 
 //----- (00000001000F56AC) ----------------------------------------------------
+/*
 CKYRotationView *__cdecl -[CKYRotationView initWithCoder:](CKYRotationView *self, SEL a2, id a3)
 {
     CKYRotationView *v3; // x0
@@ -27,6 +28,18 @@ CKYRotationView *__cdecl -[CKYRotationView initWithCoder:](CKYRotationView *self
         -[CKYRotationView initConfig](v3, "initConfig");
     return v4;
 }
+*/
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self initConfig];
+    }
+    
+    return self;
+}
+/*
 // 101D5FA40: using guessed type __objc2_class OBJC_CLASS___CKYRotationView;
 
 //----- (00000001000F5704) ----------------------------------------------------
@@ -54,6 +67,15 @@ CKYRotationView *__cdecl -[CKYRotationView initWithFrame:](CKYRotationView *self
         -[CKYRotationView initConfig](v3, "initConfig");
     return v4;
 }
+ */
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initConfig];
+    }
+    return self;
+}
+/*
 // 1000F5704: fragmented variable at 0:d0.8,8:d1.8,16:d2.8,24:d3.8 may be wrong
 // 101D5FA40: using guessed type __objc2_class OBJC_CLASS___CKYRotationView;
 
@@ -183,6 +205,27 @@ void __cdecl -[CKYRotationView initConfig](CKYRotationView *self, SEL a2)
     objc_msgSend(v2, "addSubview:", v38);
     objc_release();
 }
+ */
+- (void)initConfig{
+    
+    self.backgroundColor  =[UIColor colorWithWhite:0 alpha:0];
+    self.xScale = 1.0;
+    self.yScale = 1.0;
+    self.angle = 0.0;
+    
+    v4 = y;
+    v5 = y;
+    v6 = height;
+    v7 = y + height;
+    v8 =
+    CGFloat  y = self.frame.origin.y;
+    CGFloat  width = self.frame.size.width;
+    
+    
+    
+}
+
+/*
 
 //----- (00000001000F5BF0) ----------------------------------------------------
 void __cdecl -[CKYRotationView changeWidth:](CKYRotationView *self, SEL a2, double a3)
@@ -1369,6 +1412,7 @@ void __cdecl -[CKYRotationView .cxx_destruct](CKYRotationView *self, SEL a2)
     objc_storeStrong();
     objc_storeStrong();
 }
+*/
 
 /*
 // Only override drawRect: if you perform custom drawing.

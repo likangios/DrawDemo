@@ -10,6 +10,7 @@
 
 @implementation CKYRotationViewItem
 
+/*
 //----- (00000001000E8744) ----------------------------------------------------
 CKYRotationViewItem *__cdecl -[CKYRotationViewItem init](CKYRotationViewItem *self, SEL a2)
 {
@@ -766,5 +767,5 @@ void __cdecl -[CKYRotationViewItem .cxx_destruct](CKYRotationViewItem *self, SEL
     objc_storeStrong();
     objc_storeStrong();
 }
-
+*/
 @end

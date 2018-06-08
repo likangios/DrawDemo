@@ -9,7 +9,7 @@
 #import "CKYCustomizingModel.h"
 
 @implementation CKYCustomizingModel
-
+/*
 
 //----- (0000000100061718) ----------------------------------------------------
 id __cdecl +[CKYCustomizingModel customizingModelGetCache](CKYCustomizingModel_meta *self, SEL a2)
@@ -890,5 +890,5 @@ void __cdecl -[CKYCustomizingModel .cxx_destruct](CKYCustomizingModel *self, SEL
     objc_storeStrong();
     objc_storeStrong();
 }
-
+*/
 @end

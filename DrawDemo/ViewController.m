@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DrawView *view = [[DrawView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview:view];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
