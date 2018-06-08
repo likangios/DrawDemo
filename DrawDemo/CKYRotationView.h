@@ -48,6 +48,6 @@
 - (void)changeHeight:(CGFloat)height;
 - (void)changeWidth:(CGFloat)width;
 - (void)initConfig;
-//- (id)initWithFrame:(struct CGRect)arg1;
-//- (id)initWithCoder:(id)arg1;
+- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithCoder:(id)arg1;
 @end

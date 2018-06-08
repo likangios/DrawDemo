@@ -970,6 +970,24 @@ CGPoint __cdecl -[CKYRotationView getLeftTopPoint](CKYRotationView *self, SEL a2
     result.var0 = v23;
     return result;
 }
+ */
+
+- (CGPoint)getLeftTopPoint{
+    
+    UIView *v3 = self.ltView;
+    CGFloat  v5 = v3.frame.size.width;
+    CGFloat v7 = v3.frame.size.height;
+    
+    UIView *v8 = self.ltView;
+    v8.frame = CGRectMake(0, 0, v5, v7);
+    
+    UIView *v9 = self.ltView;
+    
+    CGRect  rect = [self convertRect:v9.frame toView:self.superview];
+    return  CGPointMake(rect.origin.x, rect.origin.y);
+    
+}
+/*
 
 //----- (00000001000F67B0) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getLeftBottomPoint](CKYRotationView *self, SEL a2)
@@ -1034,7 +1052,23 @@ CGPoint __cdecl -[CKYRotationView getLeftBottomPoint](CKYRotationView *self, SEL
     result.var0 = v25;
     return result;
 }
+*/
 
+- (CGPoint)getLeftBottomPoint{
+    UIView *v3 = self.lbView;
+    CGFloat v5 = v3.frame.size.width;
+    CGFloat v7 = v3.frame.size.height;
+    
+    
+    UIView *v8 = self.ltView;
+    v8.frame = CGRectMake(0, self.bounds.size.height, v5, v7);
+    
+    UIView *v9 = self.ltView;
+    
+    CGRect  rect = [self convertRect:v9.frame toView:self.superview];
+    return  CGPointMake(rect.origin.x, rect.origin.y);
+}
+/*
 //----- (00000001000F6900) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getTopPoint](CKYRotationView *self, SEL a2)
 {
@@ -1098,6 +1132,27 @@ CGPoint __cdecl -[CKYRotationView getTopPoint](CKYRotationView *self, SEL a2)
     result.var0 = v25;
     return result;
 }
+ */
+
+- (CGPoint)getTopPoint{
+    UIView *v3 = self.topView;
+    
+    CGFloat v5 = v3.frame.size.width;
+    CGFloat v7 = v3.frame.size.height;
+    
+    CGFloat v9 = self.bounds.size.width * 0.5;
+    
+    UIView *v10 = self.topView;
+    v10.frame = CGRectMake(v9, 0, v5, v7);
+    
+    UIView *v11 = self.topView;
+    
+    CGRect rect = [self convertRect:v11.frame toView:self.superview];
+    return CGPointMake(rect.origin.x, rect.origin.y);
+}
+
+
+/*
 
 //----- (00000001000F6A54) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getLeftPoint](CKYRotationView *self, SEL a2)
@@ -1162,7 +1217,29 @@ CGPoint __cdecl -[CKYRotationView getLeftPoint](CKYRotationView *self, SEL a2)
     result.var0 = v25;
     return result;
 }
+*/
 
+- (CGPoint)getLeftPoint{
+    UIView *v3 = self.leftView;
+    CGFloat v5 = v3.frame.size.width;
+    
+    CGFloat v7 = v3.frame.size.height;
+    
+    CGFloat v9 = self.bounds.size.height * 0.5;
+    
+    UIView *v10 = self.topView;
+    v10.frame = CGRectMake(0, v9, v5, v7);
+    
+    UIView *v11 = self.leftView;
+    
+    CGRect rect = [self convertRect:v11.frame toView:self.superview];
+    
+    return CGPointMake(rect.origin.x, rect.origin.y);
+    
+}
+
+/*
+ 
 //----- (00000001000F6BA8) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getRightPoint](CKYRotationView *self, SEL a2)
 {
@@ -1230,6 +1307,29 @@ CGPoint __cdecl -[CKYRotationView getRightPoint](CKYRotationView *self, SEL a2)
     result.var0 = v27;
     return result;
 }
+ */
+- (CGPoint)getRightPoint{
+    
+    UIView *v3 = self.rightView;
+    CGFloat v5 = v3.frame.size.width;
+    
+    CGFloat v7 = v3.frame.size.height;
+    
+    CGFloat v9 = self.bounds.size.width;
+    
+    CGFloat v11 = self.bounds.size.height * 0.5;
+    
+    UIView *v12 = self.rightView;
+    v12.frame = CGRectMake(v9, v11, v5, v7);
+    
+    UIView *v13 = self.rightView;
+    
+    CGRect rect = [self convertRect:v13.frame toView:self.superview];
+    return CGPointMake(rect.origin.x, rect.origin.y);
+    
+}
+
+/*
 
 //----- (00000001000F6D10) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getBottomPoint](CKYRotationView *self, SEL a2)
@@ -1298,7 +1398,33 @@ CGPoint __cdecl -[CKYRotationView getBottomPoint](CKYRotationView *self, SEL a2)
     result.var0 = v27;
     return result;
 }
-
+*/
+- (CGPoint)getBottomPoint{
+    UIView *v3 = self.bottomView;
+    CGFloat v5 = v3.frame.size.width;
+    
+    CGFloat v7 = v3.frame.size.height;
+    
+    CGFloat v9 = self.bounds.size.width * 0.5;
+    
+    CGFloat v11 = self.bounds.size.height;
+    
+    UIView *v12 = self.bottomView;
+    v12.frame = CGRectMake(v9, v11, v5, v7);
+    
+    UIView *v13 = self.bottomView;
+    
+    CGRect rect = [self convertRect:v13.frame toView:self.superview];
+    return CGPointMake(rect.origin.x, rect.origin.y);
+    
+}
++ (instancetype)rotationViewWithItem:(CKYRotationViewItem *)item{
+    
+    CKYRotationView *rotationView =  [[CKYRotationView alloc]init];
+    rotationView.rotationItem = item;
+    return rotationView;
+}
+/*
 //----- (00000001000F6E78) ----------------------------------------------------
 id __cdecl +[CKYRotationView rotationViewWithItem:](CKYRotationView_meta *self, SEL a2, id a3)
 {
@@ -1310,6 +1436,12 @@ id __cdecl +[CKYRotationView rotationViewWithItem:](CKYRotationView_meta *self, 
 }
 // 101D5FA40: using guessed type __objc2_class OBJC_CLASS___CKYRotationView;
 
+ */
+- (void)setXScale:(CGFloat)xScale{
+    _xScale = xScale;
+    self.rotationItem.xScale = _xScale;
+}
+/*
 //----- (00000001000F6EA8) ----------------------------------------------------
 void __cdecl -[CKYRotationView setXScale:](CKYRotationView *self, SEL a2, double a3)
 {
@@ -1323,7 +1455,12 @@ void __cdecl -[CKYRotationView setXScale:](CKYRotationView *self, SEL a2, double
     objc_msgSend(v4, "setXScale:", v3);
     objc_release();
 }
-
+*/
+- (void)setYScale:(CGFloat)yScale{
+    _yScale = yScale;
+    self.rotationItem.yScale = _yScale;
+}
+/*
 //----- (00000001000F6F04) ----------------------------------------------------
 void __cdecl -[CKYRotationView setYScale:](CKYRotationView *self, SEL a2, double a3)
 {
@@ -1337,7 +1474,13 @@ void __cdecl -[CKYRotationView setYScale:](CKYRotationView *self, SEL a2, double
     objc_msgSend(v4, "setYScale:", v3);
     objc_release();
 }
-
+*/
+- (void)setAngle:(CGFloat)angle{
+    _angle = angle;
+    self.rotationItem.angle = _angle;
+    
+}
+/*
 //----- (00000001000F6F60) ----------------------------------------------------
 void __cdecl -[CKYRotationView setAngle:](CKYRotationView *self, SEL a2, double a3)
 {
@@ -1351,7 +1494,13 @@ void __cdecl -[CKYRotationView setAngle:](CKYRotationView *self, SEL a2, double 
     objc_msgSend(v4, "setAngle:", v3);
     objc_release();
 }
+*/
+- (nullable UIView *)hitTest:(CGPoint)point withEvent:(nullable UIEvent *)event{
+    return  [super hitTest:point withEvent:event];
+    
+}   // recursively calls -pointInside:withEvent:. point is in the receiver's coordinate system
 
+/*
 //----- (00000001000F6FC8) ----------------------------------------------------
 // local variable allocation has failed, the output may be wrong!
 id __cdecl -[CKYRotationView hitTest:withEvent:](CKYRotationView *self, SEL a2, CGPoint a3, id a4)
@@ -1435,7 +1584,6 @@ double __cdecl -[CKYRotationView yScale](CKYRotationView *self, SEL a2)
 {
     return self->_yScale;
 }
-
 //----- (00000001000F70F0) ----------------------------------------------------
 CGSize __cdecl -[CKYRotationView orginSize](CKYRotationView *self, SEL a2)
 {
