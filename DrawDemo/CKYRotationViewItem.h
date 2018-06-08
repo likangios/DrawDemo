@@ -15,8 +15,8 @@
 @property(nonatomic) long long hMoveBtnPositionType; // @synthesize hMoveBtnPositionType=_hMoveBtnPositionType;
 @property(nonatomic) long long vMoveBtnPositionType; // @synthesize vMoveBtnPositionType=_vMoveBtnPositionType;
 @property(nonatomic) struct CGSize size; // @synthesize size=_size;
-@property(nonatomic) _Bool turnOverV; // @synthesize turnOverV=_turnOverV;
-@property(nonatomic) _Bool turnOverH; // @synthesize turnOverH=_turnOverH;
+@property(nonatomic) BOOL turnOverV; // @synthesize turnOverV=_turnOverV;
+@property(nonatomic) BOOL turnOverH; // @synthesize turnOverH=_turnOverH;
 @property(nonatomic) long long index; // @synthesize index=_index;
 @property(nonatomic) double toCenterYMargin; // @synthesize toCenterYMargin=_toCenterYMargin;
 @property(nonatomic) struct CGPoint center; // @synthesize center=_center;

@@ -213,16 +213,44 @@ void __cdecl -[CKYRotationView initConfig](CKYRotationView *self, SEL a2)
     self.yScale = 1.0;
     self.angle = 0.0;
     
-    v4 = y;
-    v5 = y;
-    v6 = height;
-    v7 = y + height;
-    v8 =
-    CGFloat  y = self.frame.origin.y;
-    CGFloat  width = self.frame.size.width;
+    CGFloat  v4 = self.frame.origin.y;
+    CGFloat v5 = v4;
+    CGFloat v6 = self.frame.size.height;
+    CGFloat v7 = v5 + v6;
+    CGFloat v8 = self.center.y;
+    CGFloat v9 = v7 - v8;
+    CGFloat v10 = self.frame.origin.x;
+    CGFloat v11 = v10;
+    CGFloat v12 = self.frame.size.width;
+    CGFloat  v13 = v11 + v12;
+    
+    CGFloat v14 = self.center.x;
+    self.orginAngle = atan2(v9, v13 - v14);
+    
+    self.rbView = [UIView new];
+    [self addSubview:self.rbView];
+    
+    self.rtView = [UIView new];
+    [self addSubview:self.rtView];
+    
+    self.ltView = [UIView new];
+    [self addSubview:self.ltView];
+    
+    self.lbView = [UIView new];
+    [self addSubview:self.lbView];
     
     
+    self.rightView = [UIView new];
+    [self addSubview:self.rightView];
     
+    self.leftView = [UIView new];
+    [self addSubview:self.leftView];
+    
+    self.topView = [UIView new];
+    [self addSubview:self.topView];
+    
+    self.bottomView = [UIView new];
+    [self addSubview:self.bottomView];
 }
 
 /*
@@ -288,6 +316,7 @@ void __cdecl -[CKYRotationView changeWidth:](CKYRotationView *self, SEL a2, doub
         -[CKYRotationView setXScale:](v4, "setXScale:");
         -[CKYRotationView angle](v4, "angle");
         CGAffineTransformMakeRotation();
+ 
         -[CKYRotationView xScale](v4, "xScale");
         -[CKYRotationView yScale](v4, "yScale");
         v34 = v40;
@@ -332,6 +361,52 @@ void __cdecl -[CKYRotationView changeWidth:](CKYRotationView *self, SEL a2, doub
         objc_release();
     }
 }
+ */
+
+- (void)changeWidth:(CGFloat)width{
+    
+    CGFloat v3 = width;
+    CGFloat  v5 = self.bounds.size.width;
+    CGFloat v6 = v3 / v5;
+    CGFloat v8 = v6 / self.xScale;
+    CGFloat v9 = self.xScale;
+    CGFloat v10 = v9 * v8;
+    BOOL  v11 = NO;
+    if (v10 > 0.02 ) {
+        v11 = v10 < 4.0;
+    }
+    else{
+        v11 = NO;
+    }
+    if (v11 ) {
+        self.xScale = v10;
+        CGAffineTransform  rotaion = CGAffineTransformMakeRotation(self.angle);
+        self.transform = CGAffineTransformScale(rotaion, self.xScale , self.yScale);
+        
+        CKYRotationViewItem *v12 = self.rotationItem;
+        CGFloat v14 = v12.size.width;
+        CGFloat v16 = fabs(v14 * self.xScale);
+        
+        CKYRotationViewItem *v17 = self.rotationItem;
+        CGFloat v19 = v17.size.height;
+        CGFloat v21 = hypot(v16, fabs(v19 * self.yScale));
+        
+        self.xiebian = v21 * 0.5;
+        
+        CKYRotationViewItem *v22 = self.rotationItem;
+        CGFloat v24 = v22.size.height;
+        CGFloat v26 = v24 * self.yScale;
+        
+        CKYRotationViewItem *v27 = self.rotationItem;
+        CGFloat  v29 = v27.size.width;
+        
+        self.orginAngle = atan2(v26, v29 * self.xScale);
+        
+    }
+    
+}
+
+/*
 
 //----- (00000001000F5E68) ----------------------------------------------------
 void __cdecl -[CKYRotationView changeHeight:](CKYRotationView *self, SEL a2, double a3)
@@ -438,6 +513,47 @@ void __cdecl -[CKYRotationView changeHeight:](CKYRotationView *self, SEL a2, dou
         objc_release();
     }
 }
+ */
+
+- (void)changeHeight:(CGFloat)height{
+    CGFloat  v3 = height;
+    CGFloat v6 = v3 / self.bounds.size.height;
+    CGFloat v8 = v6 / self.yScale;
+    CGFloat v10 = v8 * self.yScale;
+    BOOL v11 = NO;
+    if (v10  > 0.02) {
+        v11 = v10 < 4.0;
+    }
+    else{
+        v11 = NO;
+    }
+    if (v11) {
+        self.yScale = v10;
+        self.transform = CGAffineTransformScale(CGAffineTransformMakeRotation(self.angle), self.xScale, self.yScale);
+        CKYRotationViewItem *v12 = self.rotationItem;
+        CGFloat v14 = v12.size.width;
+        CGFloat v16 = fabs(v14 * self.xScale);
+        
+        
+        CKYRotationViewItem *v17 = self.rotationItem;
+        CGFloat v19 = v17.size.height;
+        CGFloat v21 =  hypot(v16,fabs(v19 * self.yScale));
+        
+        self.xiebian = v21 * 0.5;
+        
+        CKYRotationViewItem *v22 = self.rotationItem;
+        CGFloat v24 = v22.size.height;
+        CGFloat v26 = v24 * self.yScale;
+        
+        CKYRotationViewItem *v27 = self.rotationItem;
+        CGFloat v29 = v27.size.width;
+        
+        self.orginAngle = atan2(v26, v29 * self.xScale);
+        
+    }
+}
+
+/*
 
 //----- (00000001000F60E0) ----------------------------------------------------
 void __cdecl -[CKYRotationView turnOverH](CKYRotationView *self, SEL a2)
@@ -458,7 +574,12 @@ void __cdecl -[CKYRotationView turnOverH](CKYRotationView *self, SEL a2)
     objc_release();
     -[CKYRotationView updataContentView](v2, "updataContentView");
 }
-
+*/
+- (void)turnOverH{
+    self.rotationItem.turnOverH = YES;
+    [self updataContentView];
+}
+/*
 //----- (00000001000F6174) ----------------------------------------------------
 void __cdecl -[CKYRotationView turnOverV](CKYRotationView *self, SEL a2)
 {
@@ -478,7 +599,14 @@ void __cdecl -[CKYRotationView turnOverV](CKYRotationView *self, SEL a2)
     objc_release();
     -[CKYRotationView updataContentView](v2, "updataContentView");
 }
+*/
 
+- (void)turnOverV{
+    self.rotationItem.turnOverV = YES;
+    [self updataContentView];
+}
+
+/*
 //----- (00000001000F6208) ----------------------------------------------------
 void __cdecl -[CKYRotationView updataContentView](CKYRotationView *self, SEL a2)
 {
@@ -563,6 +691,36 @@ void __cdecl -[CKYRotationView updataContentView](CKYRotationView *self, SEL a2)
     objc_msgSend(v7, "setTransform:", v8, v9, v10, v11);
     objc_release();
 }
+ */
+
+- (void)updataContentView{
+    
+    CKYRotationViewItem *v3 = self.rotationItem;
+    BOOL v4 = v3.turnOverH;
+    
+    CKYRotationViewItem *v5 = self.rotationItem;
+    BOOL v6 = v5.turnOverV;
+    
+    UIView *v7 = self.contentView;
+    CGAffineTransform  v8;
+    if (v4) {
+        if (v6) {
+            v8 = CGAffineTransformMakeScale(-1, -1);
+        }
+        else{
+            v8 = CGAffineTransformMakeScale(-1, 1);
+        }
+    }
+    else if (v6){
+        v8 = CGAffineTransformMakeScale(1, -1);
+    }
+    else{
+        
+        v8 = CGAffineTransformMakeScale(1, 1);
+    }
+    v7.transform  = v8;
+}
+/*
 
 //----- (00000001000F63B4) ----------------------------------------------------
 CGRect __cdecl -[CKYRotationView getRotationRect](CKYRotationView *self, SEL a2)
@@ -580,7 +738,13 @@ CGRect __cdecl -[CKYRotationView getRotationRect](CKYRotationView *self, SEL a2)
     result.var0.var0 = v2;
     return result;
 }
+*/
 
+- (CGRect)getRotationRect{
+    CGRect  result = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
+    return result;
+}
+/*
 //----- (00000001000F63C0) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getRightBottomPoint](CKYRotationView *self, SEL a2)
 {
@@ -648,7 +812,25 @@ CGPoint __cdecl -[CKYRotationView getRightBottomPoint](CKYRotationView *self, SE
     result.var0 = v27;
     return result;
 }
+ */
 
+- (CGPoint)getRightBottomPoint{
+    
+    UIView  *v3 = self.rbView;
+    CGFloat v5 = v3.frame.size.width;
+    CGFloat v7 = v3.frame.size.height;
+    CGFloat v9 = self.bounds.size.width;
+    CGFloat v11 = self.bounds.size.height;
+    
+    UIView  *v12 = self.rbView;
+    v12.frame = CGRectMake(v9, v11, v5, v7);
+    
+    UIView  *v13 = self.rbView;
+    CGRect  v24 = [self convertRect:v13.frame toView:self.superview];
+    return CGPointMake(v24.origin.x, v24.origin.y);
+}
+ 
+ /*
 //----- (00000001000F6524) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getRightTopPoint](CKYRotationView *self, SEL a2)
 {
@@ -712,7 +894,23 @@ CGPoint __cdecl -[CKYRotationView getRightTopPoint](CKYRotationView *self, SEL a
     result.var0 = v25;
     return result;
 }
+*/
 
+- (CGPoint)getRightTopPoint{
+    UIView *v3 = self.rtView;
+    CGFloat v5 = v3.frame.size.width;
+    CGFloat v7 = v3.frame.size.height;
+    CGFloat v9 = self.bounds.size.width;
+    
+    UIView *v10 = self.rtView;
+    v10.frame = CGRectMake(v9, 0, v5, v7);
+    
+    UIView *v11 = self.rtView;
+    CGRect  v24 = [self convertRect:v11.frame toView:self.superview];
+    return CGPointMake(v24.origin.x, v24.origin.y);
+    
+}
+/*
 //----- (00000001000F6674) ----------------------------------------------------
 CGPoint __cdecl -[CKYRotationView getLeftTopPoint](CKYRotationView *self, SEL a2)
 {
