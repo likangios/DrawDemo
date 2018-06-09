@@ -108,6 +108,66 @@ void __cdecl -[CKYTextboxRotationView dealloc](CKYTextboxRotationView *self, SEL
         }
     }
 }
++ (id)rotationViewWithItem:(CKYRotationViewItem *)item{
+    
+    CKYRotationViewItem *v3 = item;
+    if (item.contentViewType == 2) {
+        NSString *v4 = item.text;
+        BOOL v5 = v4.length;
+        if (v5.length) {
+            
+            CKYTextboxRotationView *v10 = [[CKYTextboxRotationView alloc]initWithFrame:CGRectMake(0, 0, v3.size.width, v3.size.height)];
+            v10.backgroundColor = [UIColor clearColor];
+            v10.center = v3.center;
+            v10.orginSize = v3.size;
+            v10.rotationItem = v3;
+            CGFloat v13  = v3.size.width;
+            CGFloat v15  =fabs(v13 * item.xScale);
+            CGFloat v17 = v3.size.height;
+            CGFloat v19 = hypot(v15, fabs(v17 * v3.yScale));
+            v10.xiebian = v19 * 0.5;
+            v10.contentViewType = v3.contentViewType;
+            NSString *v148 = v3.text;
+            CGFloat v22 = v3.size.height;
+            NSString *v23 = item.textFontPath;
+            NSFont *v194 = [UIFont systemFontOfSize:14];
+            
+            CGFloat v36 = item.textStyleModel.textRect.size.height;
+            NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:v22],NSFontAttributeName,@(2.0),NSKernAttributeName,nil];
+          CGRect  rect =  [v148 boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
+            CGFloat v31 = rect.size.height;
+   
+            while (v22 >0 && v31 >= v36) {
+                v22 -= 1.0;
+                NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:v22],NSFontAttributeName,@(2.0),NSKernAttributeName,nil];
+                rect =  [v148 boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
+                v31 = rect.size.height;
+                if (rect.size.width < item.textStyleModel.textRect.size.width) {
+                    break;
+                }
+            }
+            CGFloat v37 = v3.size.width;
+            CGFloat v29 = rect.size.width;
+            if (v37 - v29 < 0.75 || (v3.size.height - v31 < 0.75)) {
+                v22 -= 1.0;
+            }
+            v3.textFontSize = v22;
+            UIImageView *v39 = [[UIImageView alloc]initWithFrame:v10.bounds];
+            UIImageView *v40 = v39;
+            BQSTextStyleModel *v41 = v3.textStyleModel;
+            NSString *v42 =  v41.textboxImageName;
+            v40.image = [UIImage imageNamed:v42];
+            v40.contentMode = UIViewContentModeScaleToFill;
+            [v10 addSubview:v40];
+            
+            CGFloat v47 = v3.textStyleModel.textRect.size.width;
+            CGFloat v48 = v3.textStyleModel.textRect.size.height;
+
+            UIView *v44 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, v47, v48)];
+    }
+    return nil;
+    
+}
 //----- (00000001000F818C) ----------------------------------------------------
 id __cdecl +[CKYTextboxRotationView rotationViewWithItem:](CKYTextboxRotationView_meta *self, SEL a2, id a3)
 {
