@@ -21,6 +21,7 @@
 		7974612D20C2A0860087C924 /* CKYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612C20C2A0860087C924 /* CKYBezierPath.m */; };
 		7974612F20C2A0960087C924 /* CKYCoreFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974612E20C2A0960087C924 /* CKYCoreFit.m */; };
 		7974613120C2A0D00087C924 /* CKYCustomizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */; };
+		79A2E6C220CE530F0090B2D4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A2E6C120CE530F0090B2D4 /* CoreText.framework */; };
 		84356C9520CA062000BAE795 /* TestMethodProject.c in Sources */ = {isa = PBXBuildFile; fileRef = 84356C9420CA062000BAE795 /* TestMethodProject.c */; };
 		84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */; };
 		84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450C20B9C66200D83B1B /* CKYStyleModel.m */; };
@@ -92,6 +93,7 @@
 		7974612C20C2A0860087C924 /* CKYBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYBezierPath.m; sourceTree = "<group>"; };
 		7974612E20C2A0960087C924 /* CKYCoreFit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCoreFit.m; sourceTree = "<group>"; };
 		7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCustomizingViewController.m; sourceTree = "<group>"; };
+		79A2E6C120CE530F0090B2D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		84356C9420CA062000BAE795 /* TestMethodProject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TestMethodProject.c; sourceTree = "<group>"; };
 		84AC450820B9C5F300D83B1B /* BQSTextStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BQSTextStyleModel.h; sourceTree = "<group>"; };
 		84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BQSTextStyleModel.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A2E6C220CE530F0090B2D4 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +120,7 @@
 			children = (
 				794A3AA120B7FF6A00B6A8E7 /* DrawDemo */,
 				794A3AA020B7FF6A00B6A8E7 /* Products */,
+				79A2E6C020CE530E0090B2D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +272,14 @@
 				797460F320C29F680087C924 /* BQSMakeViewController.h */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		79A2E6C020CE530E0090B2D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79A2E6C120CE530F0090B2D4 /* CoreText.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

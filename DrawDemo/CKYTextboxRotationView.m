@@ -7,7 +7,7 @@
 //
 
 #import "CKYTextboxRotationView.h"
-
+#import <CoreText/CoreText.h>
 @implementation CKYTextboxRotationView
 //----- (00000001000F7FE4) ----------------------------------------------------
 // local variable allocation has failed, the output may be wrong!
@@ -74,7 +74,6 @@ CKYTextboxRotationView *__cdecl -[CKYTextboxRotationView initWithFrame:](CKYText
 //----- (00000001000F8114) ----------------------------------------------------
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [super dealloc];
 }
 /*
 void __cdecl -[CKYTextboxRotationView dealloc](CKYTextboxRotationView *self, SEL a2)
@@ -96,25 +95,12 @@ void __cdecl -[CKYTextboxRotationView dealloc](CKYTextboxRotationView *self, SEL
 // 101D5FB30: using guessed type __objc2_class OBJC_CLASS___CKYTextboxRotationView;
 */
 + (instancetype)rotationViewWithItem:(CKYRotationViewItem *)item{
-    if (item.contentViewType == 2) {
-        if (item.text.length) {
-         
-            CKYTextboxRotationView *textView = [[CKYTextboxRotationView alloc]initWithFrame:CGRectMake(0, 0, item.size.width, item.size.height)];
-            textView.backgroundColor = [UIColor clearColor];
-            textView.center = item.center;
-            textView.orginSize = item.size;
-            textView.rotationItem = item;
-            
-        }
-    }
-}
-+ (id)rotationViewWithItem:(CKYRotationViewItem *)item{
     
     CKYRotationViewItem *v3 = item;
     if (item.contentViewType == 2) {
         NSString *v4 = item.text;
         BOOL v5 = v4.length;
-        if (v5.length) {
+        if (v5) {
             
             CKYTextboxRotationView *v10 = [[CKYTextboxRotationView alloc]initWithFrame:CGRectMake(0, 0, v3.size.width, v3.size.height)];
             v10.backgroundColor = [UIColor clearColor];
@@ -164,10 +150,63 @@ void __cdecl -[CKYTextboxRotationView dealloc](CKYTextboxRotationView *self, SEL
             CGFloat v48 = v3.textStyleModel.textRect.size.height;
 
             UIView *v44 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, v47, v48)];
+            UIView *v49 = v44;
+            v49.clipsToBounds = NO;
+            CGFloat v52 = v3.textStyleModel.textRect.size.width;
+            CGFloat v54 = v3.textStyleModel.textRect.origin.x;
+            
+            CGFloat v57 = v3.textStyleModel.textRect.size.height;
+            CGFloat v59 = v3.textStyleModel.textRect.origin.y;
+            v49.center = CGPointMake(v52 * 0.5 + v54 , v57 * 0.5 + v59);
+            
+            UIFont *font = [UIFont systemFontOfSize:v22];
+            
+            UILabel *v61 = [[UILabel alloc]init];
+            v61.font = font;
+            
+            UIGraphicsBeginImageContextWithOptions(v49.frame.size,YES,1);
+            CGContextRef contextRef =  UIGraphicsGetCurrentContext();
+            CGContextSaveGState(contextRef);
+//            CGFloat v62 = CGAffineTransformIdentity[2];
+//            CGFloat v188 = v62;
+//            CGFloat v187 = CGAffineTransformIdentity[1];
+//            CGFloat v186 = CGAffineTransformIdentity[0];
+
+            CGContextSetTextMatrix(contextRef, CGAffineTransformIdentity);
+            CGContextScaleCTM(contextRef, 1, 1);
+            
+            CGMutablePathRef muPathRef = CGPathCreateMutable();
+            CGPathAddRect(muPathRef, &CGAffineTransformIdentity, v49.frame);
+            
+            NSMutableAttributedString *v65 = [[NSMutableAttributedString alloc]initWithString:v3.text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:v22],NSKernAttributeName:@(2.0)}];
+            NSMutableAttributedString *v131 = v65;
+            CTFramesetterRef framesetter =
+            CTFramesetterCreateWithAttributedString((CFAttributedStringRef)v65);
+          CTFrameRef frame =   CTFramesetterCreateFrame(framesetter, CFRangeMake(0, v148.length), muPathRef, (CFDictionaryRef)v131);
+            CTFrameDraw(frame, contextRef);
+            CFArrayRef lines =  CTFrameGetLines(frame);
+           CFIndex count =  CFArrayGetCount(lines);
+            CGFloat v130 = count;
+            CGPoint originsPoint;
+            CTFrameGetLineOrigins(frame, CFRangeMake(0, v130), &originsPoint);
+           CFIndex v66 = CFArrayGetCount(lines);
+            CGContextRestoreGState(contextRef);
+            CGFloat v69 = v49.frame.size.height;
+            CGFloat v67 = MAX(1, v66);
+            [v148 enumerateSubstringsInRange:NSMakeRange(0, v148.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+                
+            }];
+            
+        }
+        
+        
+        
     }
     return nil;
     
 }
+
+/*
 //----- (00000001000F818C) ----------------------------------------------------
 id __cdecl +[CKYTextboxRotationView rotationViewWithItem:](CKYTextboxRotationView_meta *self, SEL a2, id a3)
 {
