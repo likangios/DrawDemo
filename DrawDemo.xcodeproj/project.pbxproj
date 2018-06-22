@@ -10,6 +10,7 @@
 		79085C3A20B8162000A6E192 /* CKYRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3920B8162000A6E192 /* CKYRotationView.m */; };
 		79085C3D20B8163400A6E192 /* CKYTextboxRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3C20B8163400A6E192 /* CKYTextboxRotationView.m */; };
 		79085C4020B8164E00A6E192 /* CKYRotationViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79085C3F20B8164E00A6E192 /* CKYRotationViewItem.m */; };
+		7949630C20DC97FD00F90B21 /* BQSlabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7949630B20DC97FD00F90B21 /* BQSlabelView.m */; };
 		794A3AA420B7FF6A00B6A8E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AA320B7FF6A00B6A8E7 /* AppDelegate.m */; };
 		794A3AA720B7FF6A00B6A8E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A3AA620B7FF6A00B6A8E7 /* ViewController.m */; };
 		794A3AAA20B7FF6A00B6A8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794A3AA820B7FF6A00B6A8E7 /* Main.storyboard */; };
@@ -26,15 +27,21 @@
 		84AC450A20B9C5F300D83B1B /* BQSTextStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */; };
 		84AC450D20B9C66200D83B1B /* CKYStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450C20B9C66200D83B1B /* CKYStyleModel.m */; };
 		84AC451020B9CF1B00D83B1B /* CKYCustomizingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC450F20B9CF1B00D83B1B /* CKYCustomizingModel.m */; };
+		C24D4B70ECEE0EC5D5EFD23B /* libPods-DrawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 679D7415D01C94AA5B28AC6F /* libPods-DrawDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448A1564C92C637C8D2002E0 /* Pods-DrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawDemo/Pods-DrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		679D7415D01C94AA5B28AC6F /* libPods-DrawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DrawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79085C3820B8162000A6E192 /* CKYRotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYRotationView.h; sourceTree = "<group>"; };
 		79085C3920B8162000A6E192 /* CKYRotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYRotationView.m; sourceTree = "<group>"; };
 		79085C3B20B8163400A6E192 /* CKYTextboxRotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYTextboxRotationView.h; sourceTree = "<group>"; };
 		79085C3C20B8163400A6E192 /* CKYTextboxRotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYTextboxRotationView.m; sourceTree = "<group>"; };
 		79085C3E20B8164E00A6E192 /* CKYRotationViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYRotationViewItem.h; sourceTree = "<group>"; };
 		79085C3F20B8164E00A6E192 /* CKYRotationViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYRotationViewItem.m; sourceTree = "<group>"; };
+		7949630A20DC97CE00F90B21 /* BQSlabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSlabelView.h; sourceTree = "<group>"; };
+		7949630B20DC97FD00F90B21 /* BQSlabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BQSlabelView.m; sourceTree = "<group>"; };
+		7949630E20DCAA4100F90B21 /* DrawDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawDemo.pch; sourceTree = "<group>"; };
 		794A3A9F20B7FF6A00B6A8E7 /* DrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794A3AA220B7FF6A00B6A8E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		794A3AA320B7FF6A00B6A8E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,7 +85,6 @@
 		7974611220C29F680087C924 /* CKYCustomizingViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKYCustomizingViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		7974611420C29F680087C924 /* CKYCustomizingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYCustomizingModel.h; path = star/BaseModel/CKYCustomizingModel.h; sourceTree = "<group>"; };
 		7974611520C29F680087C924 /* CKYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYBaseModel.h; sourceTree = "<group>"; };
-		7974611620C29F680087C924 /* CKYStyleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYStyleModel.h; path = star/BaseModel/CKYStyleModel.h; sourceTree = "<group>"; };
 		7974611720C29F680087C924 /* CKYRotationViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYRotationViewItem.h; path = star/BaseModel/CKYRotationViewItem.h; sourceTree = "<group>"; };
 		7974611820C29F680087C924 /* BQSPanBoardTopViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BQSPanBoardTopViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		7974611920C29F680087C924 /* BQSCusBackImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQSCusBackImageView.h; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		7974612E20C2A0960087C924 /* CKYCoreFit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCoreFit.m; sourceTree = "<group>"; };
 		7974613020C2A0D00087C924 /* CKYCustomizingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYCustomizingViewController.m; sourceTree = "<group>"; };
 		79A2E6C120CE530F0090B2D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7B2BA814566EA7F429CDD299 /* Pods-DrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawDemo/Pods-DrawDemo.release.xcconfig"; sourceTree = "<group>"; };
 		84356C9420CA062000BAE795 /* TestMethodProject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TestMethodProject.c; sourceTree = "<group>"; };
 		84AC450820B9C5F300D83B1B /* BQSTextStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BQSTextStyleModel.h; sourceTree = "<group>"; };
 		84AC450920B9C5F300D83B1B /* BQSTextStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BQSTextStyleModel.m; sourceTree = "<group>"; };
@@ -109,18 +116,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A2E6C220CE530F0090B2D4 /* CoreText.framework in Frameworks */,
+				C24D4B70ECEE0EC5D5EFD23B /* libPods-DrawDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48A92E217386032563B1785C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				448A1564C92C637C8D2002E0 /* Pods-DrawDemo.debug.xcconfig */,
+				7B2BA814566EA7F429CDD299 /* Pods-DrawDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		794A3A9620B7FF6A00B6A8E7 = {
 			isa = PBXGroup;
 			children = (
 				794A3AA120B7FF6A00B6A8E7 /* DrawDemo */,
 				794A3AA020B7FF6A00B6A8E7 /* Products */,
 				79A2E6C020CE530E0090B2D4 /* Frameworks */,
+				48A92E217386032563B1785C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +178,7 @@
 				794A3AAD20B7FF6A00B6A8E7 /* LaunchScreen.storyboard */,
 				794A3AB020B7FF6A00B6A8E7 /* Info.plist */,
 				794A3AB120B7FF6A00B6A8E7 /* main.m */,
+				7949630E20DCAA4100F90B21 /* DrawDemo.pch */,
 			);
 			path = DrawDemo;
 			sourceTree = "<group>";
@@ -226,7 +245,6 @@
 			children = (
 				7974611420C29F680087C924 /* CKYCustomizingModel.h */,
 				7974611520C29F680087C924 /* CKYBaseModel.h */,
-				7974611620C29F680087C924 /* CKYStyleModel.h */,
 				7974611720C29F680087C924 /* CKYRotationViewItem.h */,
 			);
 			name = Model;
@@ -254,6 +272,8 @@
 				7974610820C29F680087C924 /* BQSBackgroundView.h */,
 				7974610720C29F680087C924 /* BQSPanBoardTopView.h */,
 				7974612120C29F680087C924 /* BQSHitTestView.h */,
+				7949630A20DC97CE00F90B21 /* BQSlabelView.h */,
+				7949630B20DC97FD00F90B21 /* BQSlabelView.m */,
 			);
 			name = View;
 			path = "New Group";
@@ -278,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				79A2E6C120CE530F0090B2D4 /* CoreText.framework */,
+				679D7415D01C94AA5B28AC6F /* libPods-DrawDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 794A3AB520B7FF6A00B6A8E7 /* Build configuration list for PBXNativeTarget "DrawDemo" */;
 			buildPhases = (
+				406D7492DDDCEDB10E2BAD79 /* [CP] Check Pods Manifest.lock */,
 				794A3A9B20B7FF6A00B6A8E7 /* Sources */,
 				794A3A9C20B7FF6A00B6A8E7 /* Frameworks */,
 				794A3A9D20B7FF6A00B6A8E7 /* Resources */,
+				F395052D675E8B509AE8197D /* [CP] Embed Pods Frameworks */,
+				B955F6B086DDE65058DA9EA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +372,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		406D7492DDDCEDB10E2BAD79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B955F6B086DDE65058DA9EA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawDemo/Pods-DrawDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F395052D675E8B509AE8197D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawDemo/Pods-DrawDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		794A3A9B20B7FF6A00B6A8E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -363,6 +438,7 @@
 				79085C3A20B8162000A6E192 /* CKYRotationView.m in Sources */,
 				79085C4020B8164E00A6E192 /* CKYRotationViewItem.m in Sources */,
 				794A3AA420B7FF6A00B6A8E7 /* AppDelegate.m in Sources */,
+				7949630C20DC97FD00F90B21 /* BQSlabelView.m in Sources */,
 				7974612F20C2A0960087C924 /* CKYCoreFit.m in Sources */,
 				84AC451020B9CF1B00D83B1B /* CKYCustomizingModel.m in Sources */,
 				7974613120C2A0D00087C924 /* CKYCustomizingViewController.m in Sources */,
@@ -499,10 +575,12 @@
 		};
 		794A3AB620B7FF6A00B6A8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448A1564C92C637C8D2002E0 /* Pods-DrawDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC3QX9VJ78;
+				GCC_PREFIX_HEADER = DrawDemo/DrawDemo.pch;
 				INFOPLIST_FILE = DrawDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,10 +592,12 @@
 		};
 		794A3AB720B7FF6A00B6A8E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2BA814566EA7F429CDD299 /* Pods-DrawDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC3QX9VJ78;
+				GCC_PREFIX_HEADER = DrawDemo/DrawDemo.pch;
 				INFOPLIST_FILE = DrawDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

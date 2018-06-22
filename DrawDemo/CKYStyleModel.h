@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface CKYStyleModel : NSObject
 + (id)sytleModelWithDict:(id)arg1;
-@property(retain, nonatomic) UIColor *endColor; // @synthesize endColor=_endColor;
-@property(retain, nonatomic) UIColor *startColor; // @synthesize startColor=_startColor;
-@property(nonatomic) double textAlpha; // @synthesize textAlpha=_textAlpha;
-@property(nonatomic) double textColorSize; // @synthesize textColorSize=_textColorSize;
-@property(retain, nonatomic) UIColor *textColor; // @synthesize textColor=_textColor;
-@property(nonatomic) double miaobianAlpha; // @synthesize miaobianAlpha=_miaobianAlpha;
-@property(nonatomic) double miaobianSize; // @synthesize miaobianSize=_miaobianSize;
-@property(retain, nonatomic) UIColor *miaobianColor; // @synthesize miaobianColor=_miaobianColor;
+@property(strong, nonatomic) UIColor *endColor;
+@property(strong, nonatomic) UIColor *startColor;
+@property(nonatomic) CGFloat textAlpha;
+@property(nonatomic) CGFloat textColorSize;
+@property(retain, nonatomic) UIColor *textColor;
+@property(nonatomic) CGFloat miaobianAlpha;
+@property(nonatomic) CGFloat miaobianSize;
+@property(retain, nonatomic) UIColor *miaobianColor; 
 - (id)copyStyleModel;
 - (id)init;
 - (id)getDict;

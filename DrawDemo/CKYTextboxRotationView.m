@@ -193,6 +193,10 @@ void __cdecl -[CKYTextboxRotationView dealloc](CKYTextboxRotationView *self, SEL
             CGContextRestoreGState(contextRef);
             CGFloat v69 = v49.frame.size.height;
             CGFloat v67 = MAX(1, v66);
+            CGFloat  v71 = v148.length;
+            NSInteger v182 = 0;
+            NSInteger v178 = 0;
+            CGFloat v72 = v69 / v67;
             [v148 enumerateSubstringsInRange:NSMakeRange(0, v148.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
                 
             }];
